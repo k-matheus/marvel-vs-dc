@@ -1,0 +1,318 @@
+/* Estilo para o formulário de pesquisa */
+.search-form {
+    display: flex;              /* Coloca o campo e o botão lado a lado */
+    justify-content: center;    /* Centraliza o formulário na tela */
+    margin-top: 20px;           /* Espaço acima da barra */
+}
+
+/* Estilo do campo de texto (input) */
+.search-form input[type="text"] {
+    padding: 10px;              /* Espaçamento interno */
+    font-size: 16px;            /* Tamanho da letra */
+    border: 1px solid #ccc;     /* Borda cinza clara */
+    border-radius: 5px 0 0 5px; /* Cantos arredondados à esquerda */
+    outline: none;              /* Remove contorno azul ao clicar */
+    width: 250px;               /* Largura do campo de texto */
+}
+
+/* Estilo do botão "Buscar" */
+.search-form button {
+    padding: 10px 20px;         /* Espaçamento interno */
+    font-size: 16px;            /* Tamanho da letra */
+    border: none;               /* Remove a borda padrão */
+    background-color: #000000;  /* Cor de fundo preta */
+    color: #fff;                /* Cor do texto branca */
+    border-radius: 0 5px 5px 0; /* Cantos arredondados à direita */
+    cursor: pointer;            /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+/* Estilo ao passar o mouse sobre o botão */
+.search-form button:hover {
+    background-color: #333333;  /* Muda para cinza escuro ao passar o mouse */
+}
+
+.card {
+    width: 300px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card-content .btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content .btn:hover{
+    background-color: #333333;
+
+}
+
+/* Personalizando o Segundo Card que é do capitao america */
+
+.card2 {
+    width: 300px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+        .card2 img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+
+.card-content2{
+    padding: 15px;
+}
+
+.card-content2 h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card-content2 .btn2 {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content2 .btn2:hover{
+    background-color: #333333;
+
+}
+
+/*Personalizando o Hulk*/
+
+.card3 {
+    width: 300px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content3 {
+    padding: 15px;
+}
+
+.card-content3 h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card-content3 .btn3 {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content3 .btn3:hover{
+    background-color: #333333;
+
+}
+
+/*Personalizando a Viuva Negra*/
+
+.card4 {
+    width: 300px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content4 {
+    padding: 15px;
+}
+
+.card-content4 h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card-content4 .btn4 {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content4 .btn4:hover{
+    background-color: #333333;
+
+}
+
+/* Personalizando o Thor*/
+
+.card5 {
+    width: 300px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card5 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content5 {
+    padding: 15px;
+}
+
+.card-content5 h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card-content5.btn5 {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content5 .btn5:hover{
+    background-color: #333333;
+
+}
+
+/*Personalizando o Homem aranha*/
+
+.card6 {
+    width: 300px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card6 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content6 {
+    padding: 15px;
+}
+
+.card-content6 h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.card-content6 .btn6 {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content6 .btn6:hover{
+    background-color: #333333;
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    margin: 0;
+}
+

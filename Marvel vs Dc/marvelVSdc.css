@@ -1,0 +1,92 @@
+/* Estilos para a imagem */
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* A imagem vai cobrir toda a largura da página */
+    height: 50vh; /* A imagem vai cobrir a parte superior (50% da altura da janela) */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    z-index: -1; /* Faz a imagem ficar atrás do conteúdo */
+}
+
+/* Estilos para o corpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #494646; /* Cor suave de cinza claro */
+    transition: background-color 2s ease-in-out; /* A transição será suave */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo tenha altura total da página */
+    overflow: hidden;
+}
+
+/* Quando a imagem estiver no topo, a cor de fundo pode ser alterada */
+body.transition-background {
+    background-color: #554e4e; /* Cor um pouco mais escura de cinza claro ao rolar a página */
+}
+
+/* Estilo para o conteúdo que vai vir abaixo da imagem */
+header {
+    padding-top: 50vh; /* A partir da metade da tela, o conteúdo aparecerá */
+    text-align: center;
+    color: #ffffff; /* Cor suave para o texto */
+    font-size: 24px;
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem */
+    flex-grow: 1; /* Faz com que o conteúdo ocupe o restante da altura disponível */
+}
+
+/* Estilo para o botão */
+button.btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #333333; /* Cor um pouco mais clara para visualização da transição */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #1b1b1b; /* Cor escura para o rodapé */
+    color: rgb(255, 255, 255); /* Cor do texto no rodapé */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do botão dentro do header */
+header a {
+    text-decoration: none;
+}
+
+/* Efeito de transição do conteúdo (se necessário) */
+header h1 {
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+body.transition-background header h1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Rodapé - Seção de informações */
+footer section h2 {
+    margin-top: 0;
+}
+
+footer section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
