@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel VS DC</title>
+    <link rel="stylesheet" href="marvelVSdc.css">
+</head>
+<body>
+    <!-- Imagem no topo -->
+    <img src="imagens/Captura de Tela (11).png" alt="Imagem Marvel vs DC">
+    
+    <!-- Conteúdo principal -->
+    <header>
+        <h1>Marvel VS DC</h1>
+        <p>Quem é o melhor?</p>
+        
+        <!-- Botão para redirecionar para outra página -->
+        <a href="pesquisar.html">
+            <button class="btn">Pesquise sobre Marvel e DC</button>
+        </a>
+    </header>
+
+    <!-- Rodapé -->
+    <footer>
+        <section>
+            <h2>Informações sobre Marvel e DC</h2>
+            <p>Marvel e DC são duas das maiores editoras de quadrinhos do mundo, com personagens icônicos como o Homem-Aranha, Superman, Batman, Capitão América, entre outros.</p>
+        </section>
+    </footer>
+
+    <script>
+        // Adicionar a classe quando a página carregar ou ao dar um scroll
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                document.body.classList.add('transition-background');
+            } else {
+                document.body.classList.remove('transition-background');
+            }
+        });
+    </script>
+</body>
+</html>

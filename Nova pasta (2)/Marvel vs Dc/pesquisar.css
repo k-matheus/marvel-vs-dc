@@ -1,0 +1,215 @@
+/* ---------------------- BASE GERAL ---------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    color: white;
+    background: linear-gradient(270deg, #ff0000, #000000, #0033cc);
+    background-size: 600% 600%;
+    animation: backgroundAnimation 15s ease infinite;
+  }
+  
+  /* ---------------------- FORMULÁRIO DE PESQUISA ---------------------- */
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #333;
+  }
+  
+  /* ---------------------- CONTAINER DOS CARDS ---------------------- */
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* ---------------------- ESTILO UNIFICADO DOS CARDS ---------------------- */
+  
+  .card,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 280px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h2 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .card-content .btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-content .btn:hover {
+    background-color: #333;
+  }
+  
+  /* ---------------------- ANIMAÇÃO DE FUNDO ---------------------- */
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* ---------------------- ANIMAÇÃO INTRO - MARVEL VS DC ---------------------- */
+  
+  .intro-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    animation: fadeOut 1s ease 3s forwards;
+  }
+  
+  .marvel-side,
+  .dc-side {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  .marvel-side {
+    left: -100%;
+    color: red;
+    animation: enterMarvel 2s ease-out forwards;
+  }
+  
+  .dc-side {
+    right: -100%;
+    color: #007bff;
+    animation: enterDC 2s ease-out forwards;
+  }
+  
+  .flash-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    animation: flash 0.3s ease-out 2.5s forwards;
+    z-index: 1;
+  }
+  
+  @keyframes enterMarvel {
+    0% {
+      left: -100%;
+      opacity: 0;
+    }
+    100% {
+      left: 25%;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes enterDC {
+    0% {
+      right: -100%;
+      opacity: 0;
+    }
+    100% {
+      right: 25%;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
